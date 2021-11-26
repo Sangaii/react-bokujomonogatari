@@ -1,2 +1,3 @@
 # react-bokujomonogatari
-Created with CodeSandbox
+
+文字版种田游戏
