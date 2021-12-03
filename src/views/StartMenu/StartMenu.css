@@ -1,4 +1,15 @@
 .startMenu {
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: 8px;
+  padding: 60px 60px;
   margin: auto;
   width: 500px;
+}
+.loginPage {
+  background: #eee;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

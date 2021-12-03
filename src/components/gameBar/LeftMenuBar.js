@@ -20,10 +20,10 @@ const leftMenuItem = [
 const LeftMenuBar = (props) => {
   return (
     <div className="leftMenu" style={{ background: "#fff" }}>
-      {leftMenuItem.map((item) => {
+      {leftMenuItem.map((item,index) => {
         console.log(item);
         return (
-          <div>
+          <div key={ index }>
             {item.icon}
             {item.name}
           </div>
