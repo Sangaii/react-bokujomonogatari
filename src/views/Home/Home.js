@@ -1,9 +1,9 @@
-import React from "react";
-import IndexLayout from "../../layout/IndexLayout";
-import LeftMenuBar from "../../components/gameBar/LeftMenuBar"
+import React from 'react';
+import { withRouter } from "react-router";
 
 const Home = (props) => {
-  return <IndexLayout>111</IndexLayout>;
+  console.log(props);
+ return <div key={props.location.key}>123456789</div>;
 };
 
-export default Home;
+export default withRouter(Home);

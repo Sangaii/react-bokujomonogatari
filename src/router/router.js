@@ -1,7 +1,7 @@
 import StartMenu from '../views/StartMenu/StartMenu'
-import Home from '../views/Home/Home'
+import index from '../views/Home/index'
 
 export const routes = [
-  {path:'/',component:StartMenu,key:'startmenu',exact:true},
-  {path:'/home',component:Home,key:'home'}
-]
+ { path: '/', component: StartMenu, key: 'startmenu', exact: true },
+ { path: '/index', component: index, key: 'index' },
+];

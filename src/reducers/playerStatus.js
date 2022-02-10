@@ -7,7 +7,8 @@ const initState = {
   playerCurHp: 10,
   playerMaxHp: 100,
   playerCurSp: 20,
-  playerMaxSp: 100
+  playerMaxSp: 100,
+  playerBuff: [1,0,0,0,0,0]
 };
 const handlers = {
   [PLAYER_STATUS.SET_CUR_HP]: (state, action) => {
@@ -18,7 +19,10 @@ const handlers = {
   },
   [PLAYER_STATUS.SET_MAX_HP]: (state, action) => {
     return { playerMaxHp: action.playerMaxHp };
-  }
+  },
+  [PLAYER_STATUS.SET_PLAYER_BUFF]: (state, action) => {
+    return { playerBuff: action.playerBuff };
+  },
 };
 const playerStatus = (state = initState, action) => {
   let handler = handlers[action.type];

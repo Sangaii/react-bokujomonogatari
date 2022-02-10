@@ -20,7 +20,7 @@ const StartMenu = (props) => {
  const { setUserName } = props;
  const userFormFin = (val) => {
   setUserName(val.userName);
-  props.history.push('/home');
+  props.history.push('/index');
  };
  const resetForm = () => userForm.resetFields();
  return (

@@ -1,0 +1,11 @@
+.leftMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  background: #fff;
+}
+.leftMenuItem {
+  cursor: pointer;
+  font-size: 30px;
+}

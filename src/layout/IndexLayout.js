@@ -7,15 +7,15 @@ const { Sider, Header, Content, Footer } = Layout;
 
 const IndexLayout = (props) => {
   return (
+   <Layout>
+    <Sider width="15%" style={{ height: '100vh' }}>
+     <PlayerStatus />
+     <LeftMenuBar />
+    </Sider>
     <Layout>
-      <Layout>
-        <Sider style={{ height: 300 }}>
-          <PlayerStatus />
-          <LeftMenuBar />
-        </Sider>
-      </Layout>
-      <Layout style={{ display: "block" }}>{props.children}</Layout>
+     <Content>{props.children}</Content>
     </Layout>
+   </Layout>
   );
 };
 
